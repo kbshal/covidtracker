@@ -5,7 +5,7 @@ import os,time,sys
 import json
 
 base_url="https://freegeoip.app/json/"
-class identify:
+class Identify:
     def check_country(self):
         res=urllib.request.urlopen(base_url).read().decode()
         res=json.loads(res)
