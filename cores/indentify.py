@@ -13,6 +13,7 @@ class Identify:
     def raw_data(self):
         res_1=urllib.request.urlopen(base_url).read().decode()
         res_1=json.loads(res_1)
+        return res_1
 #print(res_1)
 
 
