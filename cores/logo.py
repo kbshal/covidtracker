@@ -16,5 +16,7 @@ class Logo:
                             
                               Author:Bishal Kharal | v1                                 
     ''')
-#anner=Logo()
 
+#class Menu:
+ #   def menu(self):
+        #take=input('''''')

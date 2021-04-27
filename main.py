@@ -3,18 +3,33 @@ from cores.logo import Logo
 from  cores.indentify import Identify
 import os,time,sys,time
 
-
-def popup_message():
-    print()
-os.system('clear')
-banner=Logo()
-banner.logo()
-identify=Identify()
-json_data=identify.raw_data()
-print(f'''
+def file():
+    os.system("clear")
+    def popup_message():
+        string = "The Battle Cats For Life" # Whatever string you want
+        for letter in string:
+            sleep(0.01) # In seconds
+            sys.stdout.write(letter)
+            sys.stdout.flush() 
+    os.system('clear')
+    banner=Logo()
+    banner.logo()
+    identify=Identify()
+    final_stats_data=[]
+    stats_results=identify.covid_stats()
+    for stats_number in stats_results:
+        final_stats_data.append(stats_number)
+    json_data=identify.raw_data()
+    
+    print(f'''
 Your IP: {(json_data['ip'])}
-Country: {(json_data['country_name'])}
+Country: {(json_data["country_name"])}
 
 ''')
 
-time.sleep(1.5)
+    time.sleep(1.5)
+
+
+if __name__=="__main__":
+    file()
+
