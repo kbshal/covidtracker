@@ -1,4 +1,10 @@
 # Covid Tracker Made With Python
 
-Currently Only available for Nepal
+Installing Commands:
+
+chmod +x *
+./install.sh
+python3 main.py
+
+
 

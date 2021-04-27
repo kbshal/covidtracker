@@ -27,7 +27,4 @@ class Identify:
 
            
 
-test=Identify()
-values=test.covid_stats()
-for i in values:
-    print(i)
+
