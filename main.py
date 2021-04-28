@@ -7,7 +7,7 @@ def file():
     os.system("clear")
 
     def popup_message():
-        message = "In this difficulty situation please wear mask and stay healty 😷 \n " 
+        message = "In this difficult times please wear mask and stay healty 😷 \n " 
         for letter in message:
             sleep(0.1) # In seconds
             sys.stdout.write(Fore.YELLOW+letter)
