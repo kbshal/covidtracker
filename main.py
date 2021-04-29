@@ -35,17 +35,10 @@ Your IP: {(json_data['ip'])}
 Country: {(json_data["country_name"])}
 
 ''')
-    print(f'{Fore.BLUE}[+] {Fore.RED} Cases: {Fore.WHITE+str(final_stats_data[0])}\n')
-    print(f'{Fore.BLUE}[+] {Fore.RED} Today Cases: {Fore.WHITE+str(final_stats_data[1])}\n')
-    print(f'{Fore.BLUE}[+] {Fore.RED} Deaths: {Fore.WHITE+str(final_stats_data[2])}\n')
-    print(f'{Fore.BLUE}[+] {Fore.RED} Today Deaths: {Fore.WHITE+str(final_stats_data[3])}\n')
-    print(f'{Fore.BLUE}[+] {Fore.RED} Recovered: {Fore.WHITE+str(final_stats_data[4])}\n')
-    print(f'{Fore.BLUE}[+] {Fore.RED} Today Recovered: {Fore.WHITE+str(final_stats_data[5])}\n')
-    print(f'{Fore.BLUE}[+] {Fore.RED} Tests: {Fore.WHITE+str(final_stats_data[6])}\n')
-    print(f'{Fore.BLUE}[+] {Fore.RED} Active: {Fore.WHITE+str(final_stats_data[7])}\n')
-    
-
-
+    front_sentences=["Cases","Today Cases","Deaths","Today Deaths","Recovered","Tests","Active"]
+    for i in range(7):
+        print(f'{Fore.BLUE}[+] {Fore.RED} {front_sentences[i]}: {Fore.WHITE+str(final_stats_data[i])}\n')
+  
 if __name__=="__main__":
     file()
 
