@@ -1,11 +1,11 @@
-'''To indentify the geo and stats'''
+'''To identify the geo and stats'''
 import requests
 import urllib,urllib.error,urllib.request,urllib.parse
 import os,time,sys
 import json
 
 base_url="https://freegeoip.app/json/"
-#covid_api_base_url="https://corona.lmao.ninja/v2/countries/{}?yesterday&strict&query%20".format()
+
 class Identify:
         # for checking geo and ip
         def raw_data(self):
