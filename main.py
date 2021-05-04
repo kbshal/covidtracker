@@ -3,8 +3,9 @@ from cores.logo import Logo
 from  cores.indentify import Identify
 import os,time,sys,time
 from time import sleep
-def file():
-    os.system("clear")
+try:
+    def file():
+        os.system("clear")
 
     def popup_message():
         message = "In this difficult times please wear mask and stay healty 😷 \n " 
@@ -38,7 +39,8 @@ Country: {(json_data["country_name"])}
     front_sentences=["Cases","Today Cases","Deaths","Today Deaths","Recovered","Tests","Active"]
     for i in range(7):
         print(f'{Fore.BLUE}[+] {Fore.RED} {front_sentences[i]}: {Fore.WHITE+str(final_stats_data[i])}\n')
-  
-if __name__=="__main__":
-    file()
-
+    
+    if __name__=="__main__":
+        file()
+except Exception:
+    print(f"{Fore.RED}{Style.BRIGHT}Please connect to internet first")
