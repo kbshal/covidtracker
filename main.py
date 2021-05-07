@@ -12,9 +12,9 @@ def file():
             sleep(0.1) # In seconds
             sys.stdout.write(Fore.YELLOW+letter)
             sys.stdout.flush()
-        time.sleep(4)    
+        time.sleep(3)    
         print(Fore.GREEN+"Please wait while running daemon")
-        time.sleep(3)
+        time.sleep(2)
 
     popup_message()    
     os.system('clear')
