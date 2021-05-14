@@ -1,5 +1,11 @@
-import os
-from colorama import Fore, Back, Style
+import subprocess as sb
+try:
+    from colorama import Fore, Back, Style
+except Exception:
+    check_install=sb.run('sudo apt-get intall colorama',shell=True,capture_output=True)
+    if check_install==0:
+        pass
+
 import sys
 
 

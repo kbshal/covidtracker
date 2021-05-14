@@ -23,7 +23,7 @@ class Identify:
            cases=(source_dict["cases"])
            today_cases=source_dict["todayCases"]
            deaths,today_deaths,recovered,today_recovered,active,tests=source_dict["deaths"],source_dict['todayDeaths'],source_dict["recovered"],source_dict["todayRecovered"],source_dict["active"],source_dict["tests"]
-           return cases,today_cases,deaths,today_deaths,recovered,today_recovered,active,tests
+           yield cases,today_cases,deaths,today_deaths,recovered,today_recovered,active,tests
 
            
 
