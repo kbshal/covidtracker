@@ -1,6 +1,8 @@
 import subprocess as sb
 from cores.logo import Logo
 from  cores.indentify import Identify
+
+
 try:
     import os,time,sys,time
     from time import sleep
@@ -9,10 +11,19 @@ except ModuleNotFoundError:
    check_install= sb.run('sudo apt-get install colorama',shell=True,capture_output=True)
    if check_install.returncode==0:
        pass
+   
    else:
        sb.run("clear",shell=True)
        print('Error occured while installing colorama...please try again')
        exit()
+
+
+
+class MyException(Exception):
+    def __init__(self):
+        self.error_msg=f"Something went wrong"
+
+
 
 
 def file():
